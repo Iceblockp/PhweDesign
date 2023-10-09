@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../dist/output.css">
+    <style>
+        .mouth{
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+}
+
+.mouth-nosmile{
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+}
+    </style>
+</head>
+<body>
+    <div class="flex justify-center items-center w-screen h-screen bg-slate-500 relative">
+        <div class=" w-[150px] h-[150px] bg-yellow-500 rounded-full relative">
+          <div class="w-8 h-8 bg-gray-900 rounded-full absolute  top-9 left-[30px]"></div>
+          <div class=" w-8 h-8 bg-gray-900 rounded-full absolute  top-9 right-[30px]"></div>
+      
+          <div id="eye1" class="w-8 h-8 bg-yellow-500 rounded-full absolute  top-11 left-[30px]" hidden></div>
+          <div id="eye" class=" w-8 h-8 bg-yellow-500 rounded-full absolute  top-11 right-[30px] hidden"></div>
+      
+          <!-- smile mouth -->
+          <div id="smile" class="mouth w-16 h-8 bg-gray-700  absolute  bottom-[25px] right-[45px] hidden"></div>
+          <!-- sad mouth -->
+          <div id="sad" class="mouth-nosmile w-16 h-8 bg-gray-700  absolute  bottom-[25px] right-[45px] hidden"></div>
+        </div>
+        <button onclick="document.getElementById('smile').style.display='block',document.getElementById('sad').style.display='none',document.getElementById('eye').style.display='block',
+        document.getElementById('eye1').style.display='block';"
+         class=" w-16 h-8 border border-black   absolute  bottom-[25px] right-[45px]"">Smile</button>
+      
+        <button onclick="document.getElementById('sad').style.display='block',document.getElementById('smile').style.display='none',
+        document.getElementById('eye').style.display='none',
+        document.getElementById('eye1').style.display='none';" class=" w-16 h-8 border border-black   absolute  bottom-[25px] right-[145px]">Sad</button>
+      
+        
+      
+        
+      
+      <script>
+        let function myfunction(){
+        document.getElementById('smile').style.display='block';
+        
+        }
+      </script>
+      </div>
+      
+      
+    
+</body>
+</html>
